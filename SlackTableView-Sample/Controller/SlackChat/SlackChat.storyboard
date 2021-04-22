@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="gM7-vt-wq7">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Slack Chat View Controller-->
+        <scene sceneID="0Da-LD-4wP">
+            <objects>
+                <viewController id="gM7-vt-wq7" customClass="SlackChatViewController" customModule="SlackTableView_Sample" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="jxn-o9-Jau">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="BFO-N9-qgl">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="828"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <connections>
+                                    <outlet property="dataSource" destination="gM7-vt-wq7" id="c1l-Ke-Jmj"/>
+                                </connections>
+                            </tableView>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" showsHorizontalScrollIndicator="NO" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="aU2-vf-HDW">
+                                <rect key="frame" x="0.0" y="828" width="414" height="34"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="34" id="HoN-yc-M8D"/>
+                                </constraints>
+                                <color key="textColor" systemColor="labelColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="QKb-xH-265"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="aU2-vf-HDW" firstAttribute="leading" secondItem="QKb-xH-265" secondAttribute="leading" id="5XB-1w-ACD"/>
+                            <constraint firstItem="BFO-N9-qgl" firstAttribute="leading" secondItem="QKb-xH-265" secondAttribute="leading" id="BHT-8G-0Za"/>
+                            <constraint firstItem="BFO-N9-qgl" firstAttribute="top" secondItem="jxn-o9-Jau" secondAttribute="top" id="DeJ-rI-5zX"/>
+                            <constraint firstItem="aU2-vf-HDW" firstAttribute="bottom" secondItem="QKb-xH-265" secondAttribute="bottom" id="E2b-gS-myj"/>
+                            <constraint firstItem="aU2-vf-HDW" firstAttribute="top" secondItem="BFO-N9-qgl" secondAttribute="bottom" id="nmw-YV-383"/>
+                            <constraint firstItem="BFO-N9-qgl" firstAttribute="trailing" secondItem="QKb-xH-265" secondAttribute="trailing" id="q6f-Mq-ESS"/>
+                            <constraint firstItem="aU2-vf-HDW" firstAttribute="trailing" secondItem="QKb-xH-265" secondAttribute="trailing" id="qHF-5d-SGd"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="messageTextView" destination="aU2-vf-HDW" id="WrV-rb-1g9"/>
+                        <outlet property="tableView" destination="BFO-N9-qgl" id="o87-Kc-iMD"/>
+                        <outlet property="textViewHeight" destination="HoN-yc-M8D" id="Xw7-Yp-5lR"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ahv-Jc-GLa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="137.68115942028987" y="65.625"/>
+        </scene>
+    </scenes>
+    <resources>
+        <systemColor name="labelColor">
+            <color white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
