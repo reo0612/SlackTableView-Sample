@@ -17,20 +17,27 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="16" translatesAutoresizingMaskIntoConstraints="NO" id="QJy-Uw-Gqz">
-                                <rect key="frame" x="142.5" y="410" width="129" height="76"/>
+                                <rect key="frame" x="127" y="387" width="160" height="122"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ubm-Pj-2S7">
-                                        <rect key="frame" x="0.0" y="0.0" width="129" height="30"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="160" height="30"/>
                                         <state key="normal" title="Cellの高さを可変"/>
                                         <connections>
                                             <segue destination="EK5-l2-lJs" kind="show" id="gFa-yB-8gN"/>
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XjI-pY-iTB">
-                                        <rect key="frame" x="0.0" y="46" width="129" height="30"/>
+                                        <rect key="frame" x="0.0" y="46" width="160" height="30"/>
                                         <state key="normal" title="Slackのようなやつ"/>
                                         <connections>
                                             <segue destination="rAj-wu-8aM" kind="show" id="U6M-92-kms"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CDv-5I-cEk">
+                                        <rect key="frame" x="0.0" y="92" width="160" height="30"/>
+                                        <state key="normal" title="Slackのようなチャット"/>
+                                        <connections>
+                                            <segue destination="oa9-pX-bhF" kind="show" id="lwE-Ih-7HZ"/>
                                         </connections>
                                     </button>
                                 </subviews>
@@ -68,6 +75,16 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="K9S-Ww-DAU" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1527" y="143"/>
+        </scene>
+        <!--SlackChat-->
+        <scene sceneID="PYZ-oy-rdu">
+            <objects>
+                <viewControllerPlaceholder storyboardName="SlackChat" id="oa9-pX-bhF" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="fVo-PI-oeR"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="cIB-Ab-cOM" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1528" y="221"/>
         </scene>
     </scenes>
     <resources>
