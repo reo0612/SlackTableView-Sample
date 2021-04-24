@@ -29,6 +29,8 @@
 		8347F21526324B0A00EE1F00 /* FirebaseFirestoreSwift-Beta in Frameworks */ = {isa = PBXBuildFile; productRef = 8347F21426324B0A00EE1F00 /* FirebaseFirestoreSwift-Beta */; };
 		8347F21726324B0A00EE1F00 /* FirebaseAuth in Frameworks */ = {isa = PBXBuildFile; productRef = 8347F21626324B0A00EE1F00 /* FirebaseAuth */; };
 		8347F21926324B0A00EE1F00 /* FirebaseFirestore in Frameworks */ = {isa = PBXBuildFile; productRef = 8347F21826324B0A00EE1F00 /* FirebaseFirestore */; };
+		8347F240263250A500EE1F00 /* UserModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8347F23F263250A500EE1F00 /* UserModel.swift */; };
+		8347F262263262A300EE1F00 /* ChatModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8347F261263262A300EE1F00 /* ChatModel.swift */; };
 		83985C402630045E00330621 /* Router.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83985C3F2630045E00330621 /* Router.swift */; };
 		83985C4C263010E000330621 /* SlackChatViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83985C4B263010E000330621 /* SlackChatViewController.swift */; };
 		83985C542630111F00330621 /* SlackChat.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 83985C532630111F00330621 /* SlackChat.storyboard */; };
@@ -77,6 +79,8 @@
 		833B2E66262FE48B00629AA4 /* SlackTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SlackTableViewCell.xib; sourceTree = "<group>"; };
 		833B2E6F262FE72000629AA4 /* SlackModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SlackModel.swift; sourceTree = "<group>"; };
 		8347F20C26324A3400EE1F00 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		8347F23F263250A500EE1F00 /* UserModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserModel.swift; sourceTree = "<group>"; };
+		8347F261263262A300EE1F00 /* ChatModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatModel.swift; sourceTree = "<group>"; };
 		83985C3F2630045E00330621 /* Router.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Router.swift; sourceTree = "<group>"; };
 		83985C4B263010E000330621 /* SlackChatViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SlackChatViewController.swift; sourceTree = "<group>"; };
 		83985C532630111F00330621 /* SlackChat.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = SlackChat.storyboard; sourceTree = "<group>"; };
@@ -219,6 +223,8 @@
 			children = (
 				833B2E6F262FE72000629AA4 /* SlackModel.swift */,
 				833B2E5C262FC90000629AA4 /* CommentModel.swift */,
+				8347F23F263250A500EE1F00 /* UserModel.swift */,
+				8347F261263262A300EE1F00 /* ChatModel.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -416,11 +422,13 @@
 				83985C402630045E00330621 /* Router.swift in Sources */,
 				83985C4C263010E000330621 /* SlackChatViewController.swift in Sources */,
 				833B2E01262FBD9300629AA4 /* ViewController.swift in Sources */,
+				8347F240263250A500EE1F00 /* UserModel.swift in Sources */,
 				833B2E70262FE72000629AA4 /* SlackModel.swift in Sources */,
 				833B2E53262FC4AE00629AA4 /* VariableTableViewCell.swift in Sources */,
 				833B2E67262FE48B00629AA4 /* SlackTableViewCell.swift in Sources */,
 				833B2E5D262FC90000629AA4 /* CommentModel.swift in Sources */,
 				83C3B6B32630FE3200C639B4 /* UITextView+.swift in Sources */,
+				8347F262263262A300EE1F00 /* ChatModel.swift in Sources */,
 				833B2DFD262FBD9300629AA4 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
