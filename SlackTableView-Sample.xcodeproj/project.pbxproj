@@ -24,6 +24,11 @@
 		833B2E67262FE48B00629AA4 /* SlackTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 833B2E65262FE48B00629AA4 /* SlackTableViewCell.swift */; };
 		833B2E68262FE48B00629AA4 /* SlackTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 833B2E66262FE48B00629AA4 /* SlackTableViewCell.xib */; };
 		833B2E70262FE72000629AA4 /* SlackModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 833B2E6F262FE72000629AA4 /* SlackModel.swift */; };
+		8347F20D26324A3400EE1F00 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 8347F20C26324A3400EE1F00 /* GoogleService-Info.plist */; };
+		8347F21326324B0A00EE1F00 /* FirebaseAnalytics in Frameworks */ = {isa = PBXBuildFile; productRef = 8347F21226324B0A00EE1F00 /* FirebaseAnalytics */; };
+		8347F21526324B0A00EE1F00 /* FirebaseFirestoreSwift-Beta in Frameworks */ = {isa = PBXBuildFile; productRef = 8347F21426324B0A00EE1F00 /* FirebaseFirestoreSwift-Beta */; };
+		8347F21726324B0A00EE1F00 /* FirebaseAuth in Frameworks */ = {isa = PBXBuildFile; productRef = 8347F21626324B0A00EE1F00 /* FirebaseAuth */; };
+		8347F21926324B0A00EE1F00 /* FirebaseFirestore in Frameworks */ = {isa = PBXBuildFile; productRef = 8347F21826324B0A00EE1F00 /* FirebaseFirestore */; };
 		83985C402630045E00330621 /* Router.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83985C3F2630045E00330621 /* Router.swift */; };
 		83985C4C263010E000330621 /* SlackChatViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83985C4B263010E000330621 /* SlackChatViewController.swift */; };
 		83985C542630111F00330621 /* SlackChat.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 83985C532630111F00330621 /* SlackChat.storyboard */; };
@@ -71,6 +76,7 @@
 		833B2E65262FE48B00629AA4 /* SlackTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SlackTableViewCell.swift; sourceTree = "<group>"; };
 		833B2E66262FE48B00629AA4 /* SlackTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SlackTableViewCell.xib; sourceTree = "<group>"; };
 		833B2E6F262FE72000629AA4 /* SlackModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SlackModel.swift; sourceTree = "<group>"; };
+		8347F20C26324A3400EE1F00 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		83985C3F2630045E00330621 /* Router.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Router.swift; sourceTree = "<group>"; };
 		83985C4B263010E000330621 /* SlackChatViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SlackChatViewController.swift; sourceTree = "<group>"; };
 		83985C532630111F00330621 /* SlackChat.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = SlackChat.storyboard; sourceTree = "<group>"; };
@@ -82,6 +88,10 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8347F21326324B0A00EE1F00 /* FirebaseAnalytics in Frameworks */,
+				8347F21926324B0A00EE1F00 /* FirebaseFirestore in Frameworks */,
+				8347F21726324B0A00EE1F00 /* FirebaseAuth in Frameworks */,
+				8347F21526324B0A00EE1F00 /* FirebaseFirestoreSwift-Beta in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -133,6 +143,7 @@
 				833B2DFC262FBD9300629AA4 /* AppDelegate.swift */,
 				833B2E05262FBD9500629AA4 /* Assets.xcassets */,
 				833B2E07262FBD9500629AA4 /* LaunchScreen.storyboard */,
+				8347F20C26324A3400EE1F00 /* GoogleService-Info.plist */,
 				833B2E0A262FBD9500629AA4 /* Info.plist */,
 			);
 			path = "SlackTableView-Sample";
@@ -271,6 +282,12 @@
 			dependencies = (
 			);
 			name = "SlackTableView-Sample";
+			packageProductDependencies = (
+				8347F21226324B0A00EE1F00 /* FirebaseAnalytics */,
+				8347F21426324B0A00EE1F00 /* FirebaseFirestoreSwift-Beta */,
+				8347F21626324B0A00EE1F00 /* FirebaseAuth */,
+				8347F21826324B0A00EE1F00 /* FirebaseFirestore */,
+			);
 			productName = "SlackTableView-Sample";
 			productReference = 833B2DF9262FBD9300629AA4 /* SlackTableView-Sample.app */;
 			productType = "com.apple.product-type.application";
@@ -342,6 +359,9 @@
 				Base,
 			);
 			mainGroup = 833B2DF0262FBD9300629AA4;
+			packageReferences = (
+				8347F21126324B0A00EE1F00 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */,
+			);
 			productRefGroup = 833B2DFA262FBD9300629AA4 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -362,6 +382,7 @@
 				83985C542630111F00330621 /* SlackChat.storyboard in Resources */,
 				833B2E54262FC4AE00629AA4 /* VariableTableViewCell.xib in Resources */,
 				833B2E09262FBD9500629AA4 /* LaunchScreen.storyboard in Resources */,
+				8347F20D26324A3400EE1F00 /* GoogleService-Info.plist in Resources */,
 				833B2E4D262FC2BC00629AA4 /* SlackTable.storyboard in Resources */,
 				833B2E06262FBD9500629AA4 /* Assets.xcassets in Resources */,
 				833B2E04262FBD9300629AA4 /* Main.storyboard in Resources */,
@@ -733,6 +754,40 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		8347F21126324B0A00EE1F00 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/firebase/firebase-ios-sdk.git";
+			requirement = {
+				branch = master;
+				kind = branch;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		8347F21226324B0A00EE1F00 /* FirebaseAnalytics */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 8347F21126324B0A00EE1F00 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseAnalytics;
+		};
+		8347F21426324B0A00EE1F00 /* FirebaseFirestoreSwift-Beta */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 8347F21126324B0A00EE1F00 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = "FirebaseFirestoreSwift-Beta";
+		};
+		8347F21626324B0A00EE1F00 /* FirebaseAuth */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 8347F21126324B0A00EE1F00 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseAuth;
+		};
+		8347F21826324B0A00EE1F00 /* FirebaseFirestore */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 8347F21126324B0A00EE1F00 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseFirestore;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 833B2DF1262FBD9300629AA4 /* Project object */;
 }

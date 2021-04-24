@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>CLIENT_ID</key>
+	<string>662989359154-qk2s9k9sbltpl98hkd0r72akm42llto6.apps.googleusercontent.com</string>
+	<key>REVERSED_CLIENT_ID</key>
+	<string>com.googleusercontent.apps.662989359154-qk2s9k9sbltpl98hkd0r72akm42llto6</string>
+	<key>API_KEY</key>
+	<string>AIzaSyCRTqLVkZX0YaYAjuUrRYkqS-vrkUFLsKs</string>
+	<key>GCM_SENDER_ID</key>
+	<string>662989359154</string>
+	<key>PLIST_VERSION</key>
+	<string>1</string>
+	<key>BUNDLE_ID</key>
+	<string>ReoImanishi.SlackTableView-Sample</string>
+	<key>PROJECT_ID</key>
+	<string>slackchatsample</string>
+	<key>STORAGE_BUCKET</key>
+	<string>slackchatsample.appspot.com</string>
+	<key>IS_ADS_ENABLED</key>
+	<false></false>
+	<key>IS_ANALYTICS_ENABLED</key>
+	<false></false>
+	<key>IS_APPINVITE_ENABLED</key>
+	<true></true>
+	<key>IS_GCM_ENABLED</key>
+	<true></true>
+	<key>IS_SIGNIN_ENABLED</key>
+	<true></true>
+	<key>GOOGLE_APP_ID</key>
+	<string>1:662989359154:ios:2963c5ceb2db92ced3142b</string>
+</dict>
+</plist>
+
